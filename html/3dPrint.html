@@ -23,14 +23,81 @@
 </header>
 
 <body>
-    <!--nav class="nav3D">
+    <nav class="menu">
         <ul>
             <li><a href="./about3dPrint.html">Acerca de la impresión 3D </a></li>
             <li><a href="./3dPrint.html">Impresión bajo demanda</a> </li>
         </ul>
-    </nav-->
+    </nav>
     <div class="contenido">
         <h2>Impresión 3D bajo demanda</h2>
+        <div>
+            <form action="" method="get">
+
+                <fieldset>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="surname">Apellidos</label>
+                    <input type="text" name="surname" id="surname">
+
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="tlfn">Número de teléfono</label>
+                    <input type="text" name="tlfn" id="tlfn" pattern="[0-9]{9}">
+                </fieldset>
+
+                <fieldset>
+                    <label for="direccion">Dirección</label>
+                    <input type="text" name="direccion" id="direccion">
+
+                    <label for="CP">Codigo postal</label>
+                    <input type="text" name="CP" id="CP" pattern="[0-9]{5}">
+                </fieldset>
+
+                <fieldset>
+                    <label for="archivo">Archivo a imprimir (.STL)</label>
+                    <input type="file" name="archivo" id="archivo" accept=".stl">
+
+                    <label for="cantidad">Cantidad (1 a 10)</label>
+                    <input type="number" name="cantidad" id="cantidad" min="1" max="10">
+
+                    <label for="material">Material</label>
+                    <div>
+                        <input type="radio" name="material" id="PLA">PLA
+                        <input type="radio" name="material" id="ABS">ABS
+                        <input type="radio" name="material" id="PETG">PETG
+                        <input type="radio" name="material" id="TPU">TPU
+                    </div>
+
+
+                    <label for="color">Color</label>
+                    <select name="color" id="color">
+                        <option value="Blanco">Blanco</option>
+                        <option value="Negro">Negro</option>
+                        <option value="Rojo">Rojo</option>
+                        <option value="Azul">Azul</option>
+                        <option value="Verde">Verde</option>
+                        <option value="Amarillo">Amarillo</option>
+                        <option value="Naranja">Naranja</option>
+                        <option value="Violeta">Violeta</option>
+                    </select>
+
+                    <label for="fechaEntrega">Fecha de entrega</label>
+                    <input type="date" name="fechaEntrega" id="fechaEntrega"><br>
+
+
+                </fieldset>
+
+                <fieldset>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Resetear valores">
+                </fieldset>
+
+
+            </form>
+        </div>
     </div>
 
 </body>

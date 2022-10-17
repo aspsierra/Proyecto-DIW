@@ -1,3 +1,6 @@
+/*
+Estilo del header
+*/
 header {
     background-color: red;
     padding: 15px;
@@ -5,6 +8,9 @@ header {
     margin: 0%;
 }
 
+/*
+Estilo del cuerpo
+*/
 body {
     margin: 0px;
     background-color: blanchedalmond;
@@ -12,17 +18,43 @@ body {
     font-weight: bold;
 }
 
-nav li {
+/*
+menús
+*/
+/* propiedades comunes */
+.menu li {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: inline;
     letter-spacing: 1px;
-    margin-right: 20px;
+    padding: 10px;
+    border-radius: 10px;
     text-transform: uppercase;
+    width: 9em;
+    text-align: center;
+
+}
+
+/* Alineación de los botones */
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+/* Sombreado al pasar por encima */
+.menu li:hover {
+    background-color: #CC0000;
 }
 
 li a {
     color: white;
     text-decoration: none;
+
+}
+
+.menu:nth-child(2) li a {
+    color: black;
 }
 
 p {
@@ -35,4 +67,21 @@ p {
 .contenido div,
 .contenido {
     margin-left: 15px;
+}
+
+/*
+
+*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: fit-content;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+
 }
