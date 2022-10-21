@@ -74,7 +74,7 @@ p {
 .principal {
     flex: 0 1 auto;
     max-width: 1000px;
-    min-width: 1fr;
+    min-width: 50%;
 }
 
 .aside {
