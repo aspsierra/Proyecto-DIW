@@ -16,6 +16,7 @@ body {
     background-color: blanchedalmond;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
+
 }
 
 /*
@@ -24,14 +25,15 @@ menús
 /* propiedades comunes */
 .menu li {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: inline;
     letter-spacing: 1px;
     padding: 10px;
     border-radius: 10px;
     text-transform: uppercase;
     width: 9em;
-    text-align: center;
-
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Alineación de los botones */
@@ -50,6 +52,7 @@ menús
 li a {
     color: white;
     text-decoration: none;
+    text-align: center;
 
 }
 
@@ -63,11 +66,27 @@ p {
     justify-content: left;
 }
 
+.contenido {
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.principal {
+    flex: 0 1 auto;
+    max-width: 1000px;
+    min-width: 1fr;
+}
+
+.aside {
+    flex: 0 1 auto;
+}
+
+/*
 .contenido div,
 .contenido {
     margin-left: 15px;
-}
+
+}*/
 
 /*
 
@@ -98,6 +117,7 @@ fieldset {
 
 .sliderElement {
     display: none;
+    text-align: center;
 }
 
 
