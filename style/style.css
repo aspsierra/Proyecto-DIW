@@ -72,18 +72,16 @@ li a {
 
 .contenido {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    /*justify-content: space-evenly;*/
 }
 
-.principal {
-    flex: 0 1 auto;
-    max-width: 1000px;
-    min-width: 50%;
-}
 
 .aside {
-    flex: 0 1 auto;
+    width: 30%;
 }
+
+.principal {}
 
 /*
 .contenido div,
@@ -143,7 +141,10 @@ fieldset {
 .servicios {
     display: flex;
     background-color: red;
-    justify-content: space-around;
+    justify-content: center;
+
+
+
 }
 
 .servicios div {
