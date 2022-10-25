@@ -4,8 +4,11 @@ Estilo del header
 header {
     background-color: red;
     padding: 15px;
-    margin-left: 15px;
-    margin: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    /*margin: 0%;*/
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 /*
@@ -42,6 +45,7 @@ menús
     flex-direction: row;
     gap: 10px;
     align-items: flex-start;
+    justify-content: flex-end;
 }
 
 /* Sombreado al pasar por encima */
@@ -60,7 +64,7 @@ li a {
     color: black;
 }
 
-p {
+.contenido p {
     font-weight: lighter;
     text-indent: 2em;
     justify-content: left;
@@ -134,4 +138,16 @@ fieldset {
 
 .active {
     background-color: #717171;
+}
+
+.servicios {
+    display: flex;
+    background-color: red;
+    justify-content: space-around;
+}
+
+.servicios div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
