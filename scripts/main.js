@@ -24,4 +24,31 @@ function slider() {
     showSlides(slideIndex);
 }
 
-slider()
+function galeria(){
+    var ventana=document.getElementById("ventana");
+
+    var fotos= document.getElementsByClassName("fotos")
+
+    var imgAmpliada = document.getElementById("img")
+
+   for (let i = 0; i < fotos.length; i++) {
+        fotos[i].addEventListener("click",evt=>{
+            ventana.style.display="block"
+            imgAmpliada.src=evt.currentTarget.src
+        })  
+   }
+
+   var span=document.getElementsByClassName("close")[0];
+
+   span.addEventListener("click",evt=>{
+        ventana.style.display="none";
+   })
+}
+
+function main(){
+    slider();
+    galeria();
+
+}
+
+main();
