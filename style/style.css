@@ -37,6 +37,13 @@ menús
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.menu ul li a{
+    color: white;
+    text-decoration: none;
 }
 
 /* Alineación de los botones */
@@ -49,26 +56,39 @@ menús
 }
 
 /* Sombreado al pasar por encima */
-.menu li:hover {
+.menu ul li:hover {
     background-color: #CC0000;
 }
 
-li a {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-
+/*Submenú oculto*/
+.menu ul ul{
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.7);
+    padding: 0;
 }
 
-.menu:nth-child(2) li a {
-    color: black;
+.menu ul ul li{
+   
+    width:150px;
 }
+
+.menu ul ul li a{
+    line-height: 120%;
+    padding:10px 15px;
+}
+
+.menu ul li:hover > ul{
+    display: block;
+}
+
 
 .contenido {
     display: flex;
     flex-direction: row;
-    
-    /*justify-content: space-evenly;*/
 }
 
 
@@ -83,16 +103,6 @@ li a {
     justify-content: left;
 }
 
-/*
-.contenido div,
-.contenido {
-    margin-left: 15px;
-
-}*/
-
-/*
-
-*/
 form {
     display: flex;
     flex-direction: column;
@@ -188,7 +198,9 @@ cursor: pointer;
 .close {
     position:absolute;
     top: 15px;
+    padding: 15px;
     right: 35px;
+    border-radius: 8px;
     background-color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
@@ -207,7 +219,27 @@ cursor: pointer;
     grid-gap: 5px; 
     grid-auto-flow: row; 
 }
+
 .fotos{
-    max-width: 400px;
+    max-width: 100%;
     height: 200px;
 }
+
+#video{ 
+    display :flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#video *{   
+  width: 100%;
+  max-width: 700px;
+  height: 394px;
+  max-height: 394px;
+  border: none;
+}
+
