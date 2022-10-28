@@ -24,28 +24,25 @@ function slider() {
     showSlides(slideIndex);
 }
 
-function galeria(){
-    var ventana=document.getElementById("ventana");
-
-    var fotos= document.getElementsByClassName("fotos")
-
+function galeria() {
+    var ventana = document.getElementById("ventana");
+    var fotos = document.getElementsByClassName("fotos")
     var imgAmpliada = document.getElementById("img")
+    var span = document.getElementsByClassName("close")[0];
 
-   for (let i = 0; i < fotos.length; i++) {
-        fotos[i].addEventListener("click",evt=>{
-            ventana.style.display="block"
-            imgAmpliada.src=evt.currentTarget.src
-        })  
-   }
-
-   var span=document.getElementsByClassName("close")[0];
-
-   span.addEventListener("click",evt=>{
-        ventana.style.display="none";
-   })
+    for (let i = 0; i < fotos.length; i++) {
+        fotos[i].addEventListener("click", evt => {
+            ventana.style.display = "block"
+            imgAmpliada.src = evt.currentTarget.src
+        })
+    }
+    span.addEventListener("click", evt => {
+        ventana.style.display = "none";
+    })
 }
 
-function main(){
+
+function main() {
     slider();
     galeria();
 
