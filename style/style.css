@@ -156,10 +156,11 @@ fieldset {
 
 .servicios {
     display: flex;
-    background-color: red;
+    flex-wrap: wrap;
+    /*background-color: red;*/
     justify-content: space-between;
     gap: 20px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .servicios div {
@@ -169,16 +170,23 @@ fieldset {
     text-align: center;
 }
 
+.servicios h4 {
+    margin: 0px;
+    padding: 10px;
+}
 
-.servicios div p {
+.servicios h5 {
+    padding: 10px;
     text-indent: 0;
+    border-top: 1px solid red;
+    font-weight: lighter;
 }
 
-.servicios a:hover {
-    background-color: white;
-    border-radius: 500px;
-    transition: background-color 0.5s ease;
+.servicios img:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
 }
+
 
 .fotos:hover {
     opacity: 0.7;
