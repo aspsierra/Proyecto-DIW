@@ -1,5 +1,5 @@
 function menuDespl(){
-    desplegar = document.getElementsByClassName("desplegar");
+    var desplegar = document.getElementsByClassName("btnDesplegar");
     var clicked =false;
 
     for (let i = 0; i < desplegar.length; i++) {
@@ -16,4 +16,25 @@ function menuDespl(){
     }
 }
 
+function subMenu(){
+    var subMenu = document.getElementsByClassName("subMenu");
+    var subMenuClicked=[];
+
+    for (let i = 0; i < subMenu.length; i++) {
+        subMenuClicked[i]=false;
+        subMenu[i].addEventListener("click", evt =>{
+            if(!subMenuClicked[i]){
+                document.getElementsByClassName("desplegable")[i].style.display="block";
+                subMenuClicked[i]=true;
+            } else {
+                document.getElementsByClassName("desplegable")[i].style.display="none";
+                subMenuClicked[i]=false;
+            }
+
+        })
+        
+    }
+}
+
 menuDespl();
+subMenu();

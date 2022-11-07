@@ -1,7 +1,7 @@
 /*
 Estilo del header
 */
-.menu {    
+.mainMenu {    
     position: fixed;
     right: 0;
     left: 0;
@@ -11,7 +11,7 @@ Estilo del header
     flex-direction: column;  
 }
 
-.menu>div:nth-child(1){  
+.mainMenu>div:nth-child(1){  
     padding: 0 15px;
     background-color: red;
 }
@@ -27,7 +27,7 @@ Estilo del header
     height: 2px;
 }
 
-.desplegar{
+.btnDesplegar{
     margin-top: 20px;
     margin-right: 15px;
     border: 2px solid black;
@@ -41,7 +41,7 @@ Estilo del header
     gap: 3px;
 }
 
-.desplegar:hover{
+.btnDesplegar:hover{
     background-color: #CC0000;
 }
 
@@ -57,32 +57,48 @@ Estilo del header
     background-color: rgba(0, 0, 0, 0.7) ;
 }
 
-.menu ul{  
+.mainMenu ul{  
     float: none;
-    margin: 10px;
+    margin-right: 10px;
 }
 
-.menu li{
+.mainMenu a {
+    color: white;
+    text-decoration: none;
+    margin-top: 2px;
+
+    
+}
+
+.mainMenu li{
     letter-spacing: 1px;
     padding: 10px;
-    border-radius: 10px;
     text-transform: uppercase;
     width: auto;
-    height: 3em;
+    height: 2em;
 }
 
-.menu a {
-    color: white;
-
-    text-decoration: none;
+.subMenu{
+    cursor: pointer;
 }
 
-.menu ul a:hover {
+.mainMenu ul li:hover {
     color: #717171;
-
     transition: color 0.2s ease;
 }
 
+.desplegable {   
+    position: static;
+    display: none;
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+}
+.desplegable li {
+    font-size: 90%;
+    padding: 10px;
+    margin-right: 20px;   
+}
 /*
 Estilo del cuerpo
 */
@@ -196,13 +212,19 @@ fieldset {
 */
 .slider-container {
     max-width: 100%;
-    position: relative;
     margin: auto;
 }
 
 .sliderElement {
     display: none;
     text-align: center;
+    max-height: 600px;
+
+}
+
+.sliderElement img{
+    height: 400px; 
+    overflow: hidden;
 }
 
 
@@ -319,7 +341,6 @@ fieldset {
 .fotos {
     max-width: 100%;
     height: 100%;
-
 }
 
 #video {
