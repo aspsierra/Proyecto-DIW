@@ -1,14 +1,86 @@
 /*
 Estilo del header
 */
-header {
-    background-color: red;
-    padding: 15px;
+.menu {    
+    position: fixed;
+    right: 0;
+    left: 0;
     margin-left: auto;
     margin-right: auto;
-    /*margin: 0%;*/
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex; 
+    flex-direction: column;  
+}
+
+.menu>div:nth-child(1){  
+    padding: 0 15px;
+    background-color: red;
+}
+
+.logo{
+    float:left;
+}
+
+.guion{
+    background-color: white;
+    display: block;
+    width: 20px;
+    height: 2px;
+}
+
+.desplegar{
+    margin-top: 20px;
+    margin-right: 15px;
+    border: 2px solid black;
+    position: relative;
+    float: right;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.desplegar:hover{
+    background-color: #CC0000;
+}
+
+.menuDesp{
+    display: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: right;
+    border-top: 1px solid white;
+    background-color:  rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7) ;
+}
+
+.menu ul{  
+    float: none;
+    margin: 10px;
+}
+
+.menu li{
+    letter-spacing: 1px;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    width: auto;
+    height: 3em;
+}
+
+.menu a {
+    color: white;
+
+    text-decoration: none;
+}
+
+.menu ul a:hover {
+    color: #717171;
+
+    transition: color 0.2s ease;
 }
 
 /*
@@ -26,7 +98,7 @@ body {
 menús
 */
 /* propiedades comunes */
-.menu li {
+/*.menu li {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     letter-spacing: 1px;
     padding: 10px;
@@ -35,6 +107,7 @@ menús
     width: 9em;
     height: 3em;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     color: white;
@@ -47,7 +120,7 @@ menús
 }
 
 /* Alineación de los botones */
-.menu ul {
+/*.menu ul {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -56,12 +129,12 @@ menús
 }
 
 /* Sombreado al pasar por encima */
-.menu ul li:hover {
+/*.menu ul li:hover {
     background-color: #CC0000;
 }
 
 /*Submenú oculto*/
-.menu ul ul {
+/*.menu ul ul {
     float: left;
     display: none;
     position: absolute;
@@ -82,11 +155,11 @@ menús
 }
 
 /*mostrar submenú al pasar por encima*/
-.menu ul li:hover>ul {
+/*.menu ul li:hover>ul {
     display: block;
 }
 
-
+*/
 .contenido {
     display: flex;
     flex-direction: row;

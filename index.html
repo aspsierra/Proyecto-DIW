@@ -11,20 +11,31 @@
 </head>
 
 <header>
-    <h1>3Dimensional</h1>
+    
     <nav class="menu">
-
-        <ul>
-            <li type="none"><a href="./index.html">Inicio</a></li>
-            <li type="none" class="servDespl">Servicios
+        <div>
+            <h1 class="logo"><a href="./index.html">3Dimensional</a></h1>
+            <button class="desplegar">
+                <span class="guion"></span>
+                <span class="guion"></span>
+                <span class="guion"></span>
+            </button>
+        </div>
+        
+        <div class="menuDesp">
+            <ul>
+            <a href="./index.html"><li type="none">Inicio</li></a>
+            <a><li type="none" class="servDespl">Servicos</li></a>
                 <ul class="desplServ">
                     <li type="none"><a href="./html/shop.html">Tienda</a></li>
                     <li type="none"><a href="./html/3dPrint.html">Imprime tus modelos</a></li>
                 </ul>
-            </li>
-            <li type="none"><a href="./html/about3dPrint.html">Conoce la impresión 3D</a></li>
-            <li type="none"><a href="./html/about.html">Acerca de</a></li>
+            
+            <a href="./html/about3dPrint.html"><li type="none">Conoce la impresión 3D</li></a>
+            <a href="./html/about.html"><li type="none">Acerca de</li></a>
         </ul>
+        </div>
+        
     </nav>
 
 </header>
@@ -135,6 +146,7 @@
 
 <footer>
     <script src="./scripts/main.js"></script>
+    <script src="./scripts/menuDespl.js"></script>
 </footer>
 
 </html>
