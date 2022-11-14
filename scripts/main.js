@@ -36,6 +36,9 @@ function galeria() {
         fotos[i].addEventListener("click", evt => {
             ventana.style.display = "block"
             imgAmpliada.src = evt.currentTarget.src
+
+            imgAmpliada.style.width = "40%"
+
         })
     }
     span.addEventListener("click", evt => {
