@@ -177,9 +177,10 @@ fieldset {
 /*
 *   Edición del carrusel de imagenes del inicio
 */
-.slider-container {
+.sliderContainer {
     max-width: 100%;
     margin: auto;
+    height: 400px;
 }
 
 .sliderElement {
@@ -191,9 +192,10 @@ fieldset {
 
 .sliderElement img {
     height: 100%;
-    max-height: 700px;
+    height: 600px;
     object-fit: cover;
     overflow: hidden;
+    opacity: 1;
 }
 
 
@@ -212,22 +214,31 @@ fieldset {
     background-color: #717171;
 }
 
+.titulo {
+    background-color: transparent;
+    height: 180px;
+    text-align: center;
+    color: white;
+}
+
 .principal {
     width: 80%;
-    padding: 1em;
+    /*padding: 1em;*/
     background-color: white;
 }
 
 .servicios {
     display: flex;
     flex-wrap: wrap;
-    /*background-color: red;*/
+    background-color: red;
+    color: white;
     justify-content: space-between;
     gap: 20px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .servicios div {
+    padding: 20px;
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -299,7 +310,13 @@ fieldset {
     cursor: pointer;
 }
 
+.galeria,
+.info {
+    padding: 1em;
+}
+
 #galeria {
+
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 5px;
