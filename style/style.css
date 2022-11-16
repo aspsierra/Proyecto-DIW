@@ -223,15 +223,14 @@ fieldset {
 
 .principal {
     width: 80%;
-    /*padding: 1em;*/
+    padding: 1em;
     background-color: white;
 }
 
 .servicios {
     display: flex;
     flex-wrap: wrap;
-    background-color: red;
-    color: white;
+    color: black;
     justify-content: space-between;
     gap: 20px;
     padding: 20px;
@@ -310,10 +309,10 @@ fieldset {
     cursor: pointer;
 }
 
-.galeria,
+/*.galeria,
 .info {
     padding: 1em;
-}
+}*/
 
 #galeria {
 
