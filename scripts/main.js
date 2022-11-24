@@ -24,8 +24,6 @@ function slider() {
     showSlides(slideIndex);
 }
 
-
-
 function galeria() {
     var ventana = document.getElementById("ventana");
     var fotos = document.getElementsByClassName("fotos")

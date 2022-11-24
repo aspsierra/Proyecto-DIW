@@ -1,9 +1,9 @@
 <?php
 
 
-echo phpinfo;
+
 if(isset($_POST['enviar'])){
-    echo "enviado";
+    echo "información enviada";
 }
 
 ?>
