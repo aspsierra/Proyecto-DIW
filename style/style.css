@@ -5,6 +5,10 @@ a {
 /*
 Estilo del header
 */
+header{
+    height: 67.81px;
+}
+
 .mainMenu {
     z-index: 10;
     position: fixed;
@@ -162,15 +166,17 @@ body {
 }
 
 .formulario {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+
     gap: 20px;
 }
 
 .controles {
     display: flex;
+    width: auto;
+    max-width: 800px;
     flex-direction: row;
     gap: 50px;
     margin-bottom: 20px;
@@ -181,10 +187,11 @@ body {
 }
 
 #Render {
-    width: fit-content;
-    height: fit-content;
-    border: 1px solid black;
+    width: auto;
+    max-width: 800px;
 
+    height:500px; 
+    border: 1px solid black;
 }
 
 form {
@@ -357,6 +364,10 @@ section {
 @media only screen and (max-width: 800px) {
     #galeria {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .formulario {
+        grid-template-columns: 1fr;
     }
 
     .servicios {
