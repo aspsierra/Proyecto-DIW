@@ -136,7 +136,7 @@ body {
     text-align: justify;
 }
 
-.botones{
+.botones {
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -159,6 +159,32 @@ body {
 .botones button:hover {
     background-color: #CC0000;
     transition: background-color 0.2s ease;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.controles {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.controles h6 {
+    margin: 0;
+}
+
+#Render {
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid black;
+
 }
 
 form {
@@ -187,7 +213,6 @@ fieldset {
 .sliderElement {
     display: none;
     text-align: center;
-    
 }
 
 .sliderElement img {
@@ -217,7 +242,7 @@ fieldset {
     background-color: white;
 }
 
-.index p{
+.index p {
     text-align: center;
     text-indent: 0em;
 }
@@ -229,14 +254,14 @@ fieldset {
     background-color: red;
 }
 
-section{
+section {
     text-align: center;
 }
 
 .servicios {
     display: flex;
     flex-wrap: wrap;
-   /*background-color: red;*/
+    /*background-color: red;*/
     color: black;
     justify-content: space-evenly;
     gap: 20px;
@@ -316,10 +341,10 @@ section{
     cursor: pointer;
 }
 
-.galeria,
+/*.galeria,
 .info {
     padding: 1em;
-}
+}*/
 
 #galeria {
 
