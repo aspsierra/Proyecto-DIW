@@ -13,14 +13,9 @@ var renderer = new THREE.WebGLRenderer();
 const controls = new THREE.OrbitControls(camera, renderer.domElement)
 controls.enableDamping = true
 
-
+var loadedFigure="";
 
 scene.background = new THREE.Color(0xF1EFED)
-//scene.add(new THREE.AxesHelper(250))
-
-
-//var width = document.getElementById("Render").style.width;
-//var height = document.getElementById("Render").style.height
 renderer.setSize(visor.scrollWidth, 500);
 
 document.getElementById("Render").appendChild(renderer.domElement);
@@ -34,10 +29,8 @@ window.addEventListener("resize", function () {
 });
 
 // Adding controls
-//controls = new THREE.OrbitControls(camera, renderer.domElement);
 const light = new THREE.AmbientLight(0x404040); // soft white light
 scene.add(light);
-// Ground (comment out line: "scene.add( plane );" if Ground is not needed...)
 var plane = new THREE.Mesh(
     new THREE.PlaneBufferGeometry(250, 250),
     new THREE.MeshPhongMaterial( { color: 0x999999, specular: 0x101010 } )
@@ -46,22 +39,20 @@ var plane = new THREE.Mesh(
 plane.position.x = 0
 plane.position.z = 0
 plane.rotation.x = -90 * degree;
-//plane.position.y = 0;
-//scene.add( plane );
 plane.receiveShadow = true;
 
-
 // ASCII file - STL Import
-var loader = new THREE.STLLoader();
-loader.load('../media/dino.stl', function (geometry) {
+
+function loadFigure(figure){
+    while(scene.children.length >0){
+        scene.remove(scene.children[0])
+    }
+    scene.remove(loadedFigure)
+    var loader = new THREE.STLLoader();
+    loader.load(figure, function (geometry) {
     var material = new THREE.MeshNormalMaterial()
-    //var material = new THREE.MeshLambertMaterial( { color: '0x049ef4', specular: 0x111111, shininess: 200 } );
     var mesh = new THREE.Mesh(geometry, material);
-    //mesh.position.set( 0, 0, 0);
-
     scene.add(mesh);
-
-
     var middle = new THREE.Vector3();
     geometry.computeBoundingBox();
     geometry.boundingBox.getCenter(middle);
@@ -77,23 +68,21 @@ loader.load('../media/dino.stl', function (geometry) {
         geometry.boundingBox.max.y,
         geometry.boundingBox.max.z)
     camera.position.z = largestDimension * 1.5;
+    loadedFigure=figure;
 },
 
     (xhr) => {
         console.log((xhr.loaded / xhr.total) * 100 + '% loaded')
+        
     },
     (error) => {
         console.log(error)
 
     });
+}
 
-// Binary files - STL Import
-/*loader.load( './CalibrationCube_v2.stl', function ( geometry ) {
-    //var material = new THREE.MeshLambertMaterial( { color: 0x049ef4, specular: 0x111111, shininess: 200 } );
-    var mesh = new THREE.Mesh( geometry, material );
-    mesh.position.set( 0, 20, 0);
-    scene.add( mesh );
-} );*/
+loadFigure('');
+
 
 // Camera positioning
 camera.position.z = 200;
@@ -105,15 +94,18 @@ var ambientLight = new THREE.AmbientLight(0xffffff, 1);
 scene.add(ambientLight);
 
 // Draw scene
-var render = function () {
+function render() {
     renderer.render(scene, camera);
 };
 
 // Run game loop (render,repeat)
-var GameLoop = function () {
+function GameLoop() {
     requestAnimationFrame(GameLoop);
     controls.update();
     render();
 };
 
+
 GameLoop();
+
+

@@ -36,7 +36,7 @@
                     <a href="./shop.html">
                         <li type="none">Tienda</li>
                     </a>
-                    <a href="./3dPrint.html">
+                    <a href="../php/prueba.php">
                         <li type="none">Imprime tus modelos</li>
                     </a>
                 </ul>
@@ -86,6 +86,16 @@
 
                 <div>
                     <div>
+                        <form enctype="multipart/form-data" action="../php/prueba.php" method="post">
+                            <fieldset>
+                                <label for="archivo">Archivo a imprimir (.STL)</label>
+                                <input type="file" name="archivo" id="file" accept=".stl">
+                            
+                                <input type="submit" id="cargaFigura" name="cargaFigura" value="Cargar archivo .stl">
+                            </fieldset>
+                        </form>
+
+
                         <form action="../php/prueba.php" method="post">
 
                             <!--fieldset>
@@ -111,8 +121,8 @@
                             </fieldset-->
 
                             <fieldset>
-                                <label for="archivo">Archivo a imprimir (.STL)</label>
-                                <input type="file" name="archivo" id="archivo" accept=".stl">
+                                <!--label for="archivo">Archivo a imprimir (.STL)</label>
+                                <input type="file" name="archivo" id="file" accept=".stl"-->
 
                                 <label for="cantidad">Cantidad (1 a 10)</label>
                                 <input type="number" name="cantidad" id="cantidad" min="1" max="10">
