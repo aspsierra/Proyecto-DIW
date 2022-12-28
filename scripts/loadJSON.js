@@ -1,12 +1,17 @@
 async function load(){
-    const DATA = await fetch("../json/prueba.json").then(response => response.json());
+    const DATA = await fetch("../json/materials.json").then(response => response.json());
     console.log(DATA);
     return DATA;
 };
 
 function crearItem(item){
     var div = document.createElement("div");
-    div.innerHTML="<h3>"+item.nombre+"</h3>"
+    div.className = "item";
+    div.innerHTML = 
+        "<h3>" + item.nombre + "</h3>"+
+        "<h4>" + item.tipo + "</h4>" + 
+        "<img src = " + item.img + " alt = " + item.nombre + ">"+
+        "<p>" + item.descr + "</p>";
     document.getElementsByClassName("tabla")[0].appendChild(div);
 }
 
