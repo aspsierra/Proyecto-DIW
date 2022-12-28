@@ -409,3 +409,8 @@ footer p{
     text-align: center;
     padding-top: 1em;
 }
+
+.tabla{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
