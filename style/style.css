@@ -18,6 +18,7 @@ header{
     margin-right: auto;
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid white;
 }
 
 .mainMenu>div:nth-child(1) {
@@ -398,4 +399,13 @@ section {
     height: 394px;
     max-height: 394px;
     border: none;
+}
+
+footer p{
+    background-color: black;
+    color: white;
+    margin: 0;
+    height: 4em;
+    text-align: center;
+    padding-top: 1em;
 }

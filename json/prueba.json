@@ -1,0 +1,16 @@
+{
+ "materiales" : [
+    {
+        "nombre" : "PLA",
+        "tipo" : "FDM"
+    },
+    {
+        "nombre" : "ABS",
+        "tipo" : "FDM"
+    },
+    {
+        "nombre" : "PETG",
+        "tipo" : "FDM"
+    }
+ ]   
+}
