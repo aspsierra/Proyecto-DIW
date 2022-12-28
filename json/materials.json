@@ -1,0 +1,41 @@
+{
+ "materiales" : [
+    {
+        "nombre" : "PLA",
+        "tipo" : "FDM",
+        "img" : "https://www.blog3d.es/wp-content/uploads/2021/09/Benchy-impreso-con-Smartfil-PLA-Recycled.jpg",
+        "descr" : "El material más usado. Es el más sencillo de imprimir y proporciona un buen acabado por un bajo coste. Ideal para prototipados o figuras decorativas."
+    
+    },
+    {
+        "nombre" : "ABS",
+        "tipo" : "FDM",
+        "img" : "https://www.gambody.com/blog/wp-content/uploads/2016/02/abs-printed-3d-models.jpg",
+        "descr" : "Material más técnico. Caracterizado por ser más resistente que el PLA, pero a su vez es más complicado de imprimir."
+    },
+    {
+        "nombre" : "PETG",
+        "tipo" : "FDM",
+        "img" : "https://media.printables.com/media/prints/273948/images/2435186_cb49881f-ba55-4839-9f2e-c53ea9ad1293/thumbs/cover/1280x960/jpg/p1370583-kopie.webp",
+        "descr" : "Material resistente y más sencillo de imprimir que el ABS. Suele ser translúcido"
+    },
+    {
+        "nombre" : "TPU",
+        "tipo" : "FDM",
+        "img" : "https://i.all3dp.com/wp-content/uploads/2022/05/13153839/tpu-lead.jpg",
+        "descr" : "Materiales flexibles. Existe una gran gama en función de la de la flexibilidad deseada."
+    },
+    {
+        "nombre" : "Madera",
+        "tipo" : "FDM",
+        "img" : "https://files.cults3d.com/uploaders/33/photo-file/0672d09d-12b8-4823-9de6-fe261af319e8/Photo%2007-12-2015%2014%2001%2018.jpg",
+        "descr" : "Derivado del PLA. Este material tiene pequeñas virutas de madera que le dan un acabado de tallado en madera. Ofrece las mismas capacidades que el PLA pero con un acabado en madera"
+    },
+    {
+        "nombre" : "Resina",
+        "tipo" : "SLA",
+        "img" : "https://hdp-au-prod-app-cbay-collaborate-files.s3.ap-southeast-2.amazonaws.com/2315/9833/1204/ResinPrinter.jpg",
+        "descr" : "Resina líquida. Ideal para piezas pequeñas con gran nivel de detalle"
+    }
+ ]   
+}
