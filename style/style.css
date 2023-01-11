@@ -5,7 +5,7 @@ a {
 /*
 Estilo del header
 */
-header{
+header {
     height: 67.81px;
 }
 
@@ -191,7 +191,7 @@ body {
     width: auto;
     max-width: 800px;
 
-    height:500px; 
+    height: 500px;
     border: 1px solid black;
 }
 
@@ -386,7 +386,7 @@ section {
     border: none;
 }
 
-footer p{
+footer p {
     background-color: black;
     color: white;
     margin: 0;
@@ -395,7 +395,7 @@ footer p{
     padding-top: 1em;
 }
 
-.tabla{
+.tablaMaterial {
     /*margin-left: 2em;*/
     display: grid;
     gap: 20px;
@@ -403,20 +403,20 @@ footer p{
     grid-auto-flow: row;
 }
 
-.item{
+.item {
     border: 1px solid grey;
     padding: 1em;
     border-radius: 1em;
 }
 
-.item h3{
+.item h3 {
     margin-top: 0.5em;
     padding-bottom: 0.5em;
     font-size: 150%;
     border-bottom: 1px solid red;
 }
 
-.item img{
+.item img {
     max-width: 400px;
     height: 400px;
     object-fit: cover;
@@ -432,7 +432,7 @@ footer p{
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .item img{
+    .item img {
         height: 200px;
         max-width: 250px;
     }

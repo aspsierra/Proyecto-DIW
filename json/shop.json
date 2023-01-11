@@ -1,0 +1,18 @@
+{
+    "tienda": [
+        {
+            "nombre": "Artillery X2",
+            "tipo": "FDM",
+            "img": "https://imgaz.staticbg.com/images/oaupload/banggood/images/72/6B/97c4b8b4-1655-49c1-9dce-8f64057505b9.jpg.webp",
+            "descr": "eyeyeye",
+            "precio": "250€"
+        },
+        {
+            "nombre": "Anycubic Photon",
+            "tipo": "SLA",
+            "img": "https://imgaz.staticbg.com/images/oaupload/banggood/images/7D/AF/d01bf718-4716-4ad0-989d-3f1e345ac50e.jpg.webp",
+            "descr": "eyeyeye",
+            "precio": "227€"
+        }
+    ]
+}
